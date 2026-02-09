@@ -1,14 +1,14 @@
 To apply namespace.yml use command:
-    kubectl apply -f namespace.yml
+    kubectl apply -f ./infrastructure/namespace.yml
 
 To apply busybox.yml use command:
-    kubectl apply -f busybox.yml
+    kubectl apply -f ./infrastructure/busybox.yml
 
 To apply todoapp-pod.yml use command:
-    kubectl apply -f todoapp-pod.yml
+    kubectl apply -f ./infrastructure/todoapp-pod.yml
 
 To test ToDo application use command:
-    kubectl port-forward pod/todoapp -n todoapp 8080:8000
+    kubectl port-forward pod/todoapp -n todoapp 8080:8080
     After this go to your browser and go to http://localhost:8080
     To stop port-forward use Ctrl + c
 
