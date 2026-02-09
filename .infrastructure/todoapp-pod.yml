@@ -9,13 +9,13 @@ spec:
       image: eug696/todoapp:3.0.0
       livenessProbe:
         httpGet:
-          path: /health
+          path: /api/health/
           port: 8080
         initialDelaySeconds: 5
         periodSeconds: 5
       readinessProbe:
         httpGet:
-          path: /readiness
+          path: /api/readiness/
           port: 8080
         initialDelaySeconds: 5
         periodSeconds: 5
